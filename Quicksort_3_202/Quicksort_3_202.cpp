@@ -19,7 +19,14 @@ void input() {
 
 	cout << "\n==============" << endl;
 	cout << "\nEnter array element" << endl;
+	cout << "===================" << endl;
 
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << "<" << (i + 1) << ">";
+		cin >> arr[i];
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
