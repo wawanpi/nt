@@ -32,7 +32,8 @@ void input() {
 // swap the element at index x with the element at index y
 void swap(int x, int y)
 {
-	
+	int temp;
+	temp = arr[x];
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
