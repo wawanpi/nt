@@ -72,14 +72,10 @@ void q_short(int low, int high)
 			// swap the element at index i with the element at index j
 			swap(i, j);
 			mov_count++;
-
-
-
-
-
-
+		}
 }
-
+//j now containt the index of the last element in the sort list
+	if (low <j)//langkah11
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
