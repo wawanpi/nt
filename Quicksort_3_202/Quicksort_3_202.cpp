@@ -75,11 +75,14 @@ void q_short(int low, int high)
 		}
 }
 //j now containt the index of the last element in the sort list
-	if (low <j)//langkah11
-		//move to the pivot to its correct positions in the list
-	{
-		swap(low, j);
-		mov_count++;
+		if (low < j)//langkah11
+			//move to the pivot to its correct positions in the list
+		{
+			swap(low, j);
+			mov_count++;
+		}
+		//sort the list on the left of pivot using quick sort
+		q_short(low, j - 1);//Langkah 12
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
