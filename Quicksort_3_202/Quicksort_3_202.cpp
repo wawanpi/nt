@@ -41,26 +41,17 @@ void swap(int x, int y)
 void q_short(int low, int high)
 {
 	int pivot, i, j;
-	if (low > high) // langkah 1
+	if (low > high)                                                 // Langkah algoritma No. 1
 		return;
-}
-// pstritions the last into two parts
-// one containing element less than that or equal to pivot
-// outher containing element greater than pivot
-pivot = arr[low];   //langkah 2
-i = low + ;			//langkah 3
-j = high;			//langkah 4
 
-while (i <= j)		// langkah 10
-{
-	//search for element greater than pivot
-	while ((arr[i] <= pivot) && (i <= high)			//langkah 5
-	{
-		i++;										//langkah 6
-		cmp_count++;
-	}
-	cmp_count++;
-	//searcch for an element less than or equal to pivot
+	// Partition the list into two parts:
+	// One containing element less that or equal to privat
+	// Outher containing elements greater than pivot
+	pivot = arr[low];                                               // Langkah algoritma No. 2
+	i = low + 1;                                                    // Langkah algoritma No. 3
+	j = high;                                                       // Langkah algoritma No. 4
+
+
 
 }
 
