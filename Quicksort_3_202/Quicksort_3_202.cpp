@@ -50,6 +50,12 @@ void q_short(int low, int high)
 	pivot = arr[low];                                               // Langkah algoritma No. 2
 	i = low + 1;                                                    // Langkah algoritma No. 3
 	j = high;                                                       // Langkah algoritma No. 4
+	    while (i <= j)                                                  // Langkah algoritma No. 10
+    {
+        // search for an element greather than pivot
+        while ((arr[i] <= pivot) && (i <= high))                    // Langkah algoritma No. 5
+        {
+
 
 
 
