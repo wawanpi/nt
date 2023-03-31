@@ -4,7 +4,7 @@ using namespace std;
 //array of integres to hold valuse
 int arr[20];
 int cmp_count = 0; //number of comparasion
-int move_count = 0; //number of movment
+int mov_count = 0; //number of movment
 int n;
 void input() {
 	while (true)
@@ -69,6 +69,9 @@ void q_short(int low, int high)
 		// if the greater element is on the left of the element
 		if (i < j)                                                          // Langkah algoritma No. 9
 		{
+			// swap the element at index i with the element at index j
+			swap(i, j);
+			mov_count++;
 
 
 
