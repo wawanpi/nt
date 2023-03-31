@@ -38,8 +38,8 @@ void swap(int x, int y)
 	arr[y] = temp;
 }
 
-void q_short(int low, int high)
-	{
+void q_sort(int low, int high)
+{
 	int pivot, i, j;
 	if (low > high)                                                 // Langkah algoritma No. 1
 		return;
@@ -81,27 +81,27 @@ void q_short(int low, int high)
 		mov_count++;
 	}
 	//sort the list on the left of pivot using quick sort
-	q_short(low, j - 1);//Langkah 12
+	q_sort(low, j - 1);//Langkah 12
 	//sort the list on the right of pivot using quick sort
-	q_short(low, j + 1);//Langkah 13
+	q_sort(low, j + 1);//Langkah 13
 }
 void display() {
 	cout << "\n================" << endl;
 	cout << "\n-sorted array" << endl;
 	cout << "\n================" << endl;
-	
+
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << " ";
 	}
 	cout << "\n\nNumber of comparasions:" << cmp_count << endl;
 	cout << "Number of data movmen::" << cmp_count << endl;
-	}
+}
 
 int main() {
 	input();
 	//sort the array using quick sort
-	q_short(0, n - 1);
+	q_sort(0, n - 1);
 	display();
 	system("pause");
 
