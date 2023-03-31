@@ -29,6 +29,12 @@ void input() {
 	}
 }
 
+// swap the element at index x with the element at index y
+void swap(int x, int y)
+{
+	
+}
+
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
