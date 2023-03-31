@@ -49,11 +49,11 @@ void q_short(int low, int high)
 	pivot = arr[low];                                               // Langkah algoritma No. 2
 	i = low + 1;                                                    // Langkah algoritma No. 3
 	j = high;                                                       // Langkah algoritma No. 4
-	    while (i <= j)                                                  // Langkah algoritma No. 10
-    {
-        // search for an element greather than pivot
-        while ((arr[i] <= pivot) && (i <= high))                    // Langkah algoritma No. 5
-        {
+	while (i <= j)                                                  // Langkah algoritma No. 10
+	{
+		// search for an element greather than pivot
+		while ((arr[i] <= pivot) && (i <= high))                    // Langkah algoritma No. 5
+		{
 			i++;//langkah6                                     // Langkah algoritma No. 6
 			cmp_count++;
 		}
@@ -72,25 +72,19 @@ void q_short(int low, int high)
 			swap(i, j);
 			mov_count++;
 		}
+	}
+	//j now containt the index of the last element in the sort list
+	if (low < j)//langkah11
+		//move to the pivot to its correct positions in the list
+	{
+		swap(low, j);
+		mov_count++;
+	}
+	//sort the list on the left of pivot using quick sort
+	q_short(low, j - 1);//Langkah 12
+	//sort the list on the right of pivot using quick sort
+	q_short(low, j + 1);//Langkah 13
 }
-//j now containt the index of the last element in the sort list
-		if (low < j)//langkah11
-			//move to the pivot to its correct positions in the list
-		{
-			swap(low, j);
-			mov_count++;
-		}
-		//sort the list on the left of pivot using quick sort
-		q_short(low, j - 1);//Langkah 12
-		//sort the list on the right of pivot using quick sort
-		q_short(low, j + 1);//Langkah 13
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void display() {
+	cout <<
+}
