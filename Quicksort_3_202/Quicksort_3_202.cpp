@@ -43,7 +43,6 @@ void q_short(int low, int high)
 	int pivot, i, j;
 	if (low > high)                                                 // Langkah algoritma No. 1
 		return;
-
 	// Partition the list into two parts:
 	// One containing element less that or equal to privat
 	// Outher containing elements greater than pivot
@@ -83,7 +82,8 @@ void q_short(int low, int high)
 		}
 		//sort the list on the left of pivot using quick sort
 		q_short(low, j - 1);//Langkah 12
-
+		//sort the list on the right of pivot using quick sort
+		q_short(low, j + 1);//Langkah 13
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
