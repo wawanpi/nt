@@ -3,7 +3,7 @@ using namespace std;
 
 //array of integres to hold valuse
 int arr[20];
-int camp_count = 0; //number of comparasion
+int cmp_count = 0; //number of comparasion
 int move_count = 0; //number of movment
 int n;
 void input() {
@@ -55,7 +55,7 @@ void q_short(int low, int high)
         // search for an element greather than pivot
         while ((arr[i] <= pivot) && (i <= high))                    // Langkah algoritma No. 5
         {
-			i++;                                                    // Langkah algoritma No. 6
+			i++;//langkah6                                     // Langkah algoritma No. 6
 			cmp_count++;
 		}
 		cmp_count++;
