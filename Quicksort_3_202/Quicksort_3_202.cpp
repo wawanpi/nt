@@ -49,6 +49,7 @@ void q_short(int low, int high)
 // outher containing element greater than pivot
 pivot = arr[low];   //langkah 2
 i = low + ;			//langkah 3
+j = high;			//langkah 4
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
