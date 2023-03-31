@@ -89,4 +89,17 @@ void display() {
 	cout << "\n================" << endl;
 	cout << "\n-sorted array" << endl;
 	cout << "\n================" << endl;
+	
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << "\n\nNumber of comparasions:" << cmp_count << endl;
+	cout << "Number of data movmen::" << cmp_count << endl;
+	}
+
+int main() {
+	input();
+	//sort the array using quick sort
+	q_short(0, n - 1);
 }
