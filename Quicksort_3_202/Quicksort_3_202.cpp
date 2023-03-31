@@ -86,5 +86,7 @@ void q_short(int low, int high)
 	q_short(low, j + 1);//Langkah 13
 }
 void display() {
-	cout <<
+	cout << "\n================" << endl;
+	cout << "\n-sorted array" << endl;
+	cout << "\n================" << endl;
 }
