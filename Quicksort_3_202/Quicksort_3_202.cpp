@@ -54,6 +54,10 @@ j = high;			//langkah 4
 while (i <= j)		// langkah 10
 {
 	//search for element greater than pivot
+	while ((arr[i] <= pivot) && (i <= high)			//langkah 5
+	{
+
+	}
 
 }
 
