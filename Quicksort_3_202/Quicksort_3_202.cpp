@@ -44,7 +44,11 @@ void q_short(int low, int high)
 	if (low > high) // langkah 1
 		return;
 }
-
+// pstritions the last into two parts
+// one containing element less than that or equal to pivot
+// outher containing element greater than pivot
+pivot = arr[low];   //langkah 2
+i = low + ;			//langkah 3
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
