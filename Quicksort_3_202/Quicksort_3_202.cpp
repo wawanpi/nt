@@ -51,6 +51,11 @@ pivot = arr[low];   //langkah 2
 i = low + ;			//langkah 3
 j = high;			//langkah 4
 
+while (i <= j)		// langkah 10
+{
+
+}
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
