@@ -57,7 +57,10 @@ while (i <= j)		// langkah 10
 	while ((arr[i] <= pivot) && (i <= high)			//langkah 5
 	{
 		i++;										//langkah 6
+		cmp_count++;
 	}
+	cmp_count++;
+	//searcch for an element less than or equal to pivot
 
 }
 
