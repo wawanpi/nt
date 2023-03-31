@@ -34,7 +34,11 @@ void swap(int x, int y)
 {
 	int temp;
 	temp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = temp;
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
